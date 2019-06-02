@@ -3,9 +3,9 @@ const moment = require('moment')
 module.exports = app => {
     const query = (req, res) => {
         if(req.params.qtd < 10)
-            res.json(true)
+            res.json({response: true})
         else
-            res.json(false)
+            res.json({response: false})
     }
 
     const save = (req, res) => {
